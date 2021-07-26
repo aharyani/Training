@@ -1,6 +1,6 @@
 package Task1.Problem3point2;
 
-public class EmployeeDetailAggregation {
+public class EmployeeAggregation {
     int id;
     String name;
     Address address;

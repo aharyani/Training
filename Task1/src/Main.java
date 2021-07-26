@@ -44,8 +44,6 @@ public class Main {
         System.out.println(obj2);
         System.out.println(obj1==obj2);
 
-        System.out.println();
-
         //Q3.1: Example of Inhertance
         System.out.println("\n\n\t\t\t Q3.1: Example of Inhertance ");
         Vehicle car = new Car();

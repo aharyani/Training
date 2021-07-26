@@ -8,8 +8,11 @@ import Task1.Problem4point1.Child;
 import Task1.Problem4point2.Iphone;
 import Task1.Problem4point3.ProgrammingLanguage;
 
+import java.util.concurrent.*;
+
 public class Main {
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         /*Q1: Using encapsulation write a program in java that encapsulates Student's information (name, roll no etc)*/
 
@@ -29,12 +32,18 @@ public class Main {
 
         System.out.println("\n\n\t\t\t Q2: Singleton ");
 
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        Callable<Singleton> callable1 = () -> Singleton.getInstance();
+        Callable<Singleton> callable2 = () -> Singleton.getInstance();
+        Future<Singleton> future1 = executor.submit(callable1);
+        Future<Singleton> future2 = executor.submit(callable2);
+        Singleton obj1 = future1.get();
+        Singleton obj2 = future2.get();
 
-     Thread t1 = new Thread(()->Singleton.getInstance());
-//
-//        Thread t4 = new Thread(){
-//            ;
-//        };
+        System.out.println(obj1);
+        System.out.println(obj2);
+        System.out.println(obj1==obj2);
+
         System.out.println();
 
         //Q3.1: Example of Inhertance

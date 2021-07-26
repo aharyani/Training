@@ -37,8 +37,10 @@ public class Main {
         Callable<Singleton> callable2 = () -> Singleton.getInstance();
         Future<Singleton> future1 = executor.submit(callable1);
         Future<Singleton> future2 = executor.submit(callable2);
+        executor.shutdown();
         Singleton obj1 = future1.get();
         Singleton obj2 = future2.get();
+
 
         System.out.println(obj1);
         System.out.println(obj2);

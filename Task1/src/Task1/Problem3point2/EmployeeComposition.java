@@ -1,12 +1,12 @@
 package Task1.Problem3point2;
 
-public class Employee {
+public class EmployeeComposition {
 
     //composition has-a relationship
     private Job job;
 
 
-    public Employee(){
+    public EmployeeComposition(){
         this.job=new Job();
         job.setSalary(1000);
     }

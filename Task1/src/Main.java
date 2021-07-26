@@ -67,7 +67,7 @@ public class Main {
 
         //Q3.2.2: Composition
         System.out.println("\n\n\t\t\t Q3.2.1: Compose class with Composition ");
-       Employee employee = new Employee();
+       EmployeeComposition employee = new EmployeeComposition();
        long salary = employee.getSalary();
        System.out.println("Salary of employee :"+salary);
 

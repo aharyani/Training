@@ -3,6 +3,7 @@ package Task1.Problem3point2;
 public class EmployeeComposition {
 
     //composition has-a relationship
+    private int id;
     private Job job;
 
 
@@ -12,5 +13,13 @@ public class EmployeeComposition {
     }
     public int getSalary() {
         return job.getSalary();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

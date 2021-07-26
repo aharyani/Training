@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7b3f24-a4ad-4ee2-8c22-6c2cbbf4b791" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Task3/out/production/Task3/PrimeNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Task3/out/production/Task3/PrimeNumber.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Task3/src/PrimeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task3/src/PrimeNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

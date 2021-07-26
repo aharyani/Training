@@ -1,11 +1,14 @@
 package Task2.Problem1;
 
+import java.awt.geom.Area;
+
 public class AreaOfShapes {
 
     public static void main(String[] args) {
-        calculateArea(1.1);
-        calculateArea(1,1);
-        calculateArea(9.0,10.0);
+
+        AreaOfShapes.calculateArea(1.1);
+        AreaOfShapes.calculateArea(1,1);
+        AreaOfShapes.calculateArea(9.0,10.0);
     }
 
     public static void calculateArea(double radius){

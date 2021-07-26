@@ -1,6 +1,6 @@
 package Task2.Problem3;
 
-class Employee implements Person {
+public class Employee implements Person {
 
     private int id;
     private String firstName;

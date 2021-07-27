@@ -3,9 +3,9 @@ package Problem1;
 public class StringLiteralnObject {
 
     /**
-     *String Pool:  String Pool in Java is a pool of Strings which is stored in Java Heap Memory
+     * *\*String Pool: String Pool in Java is a pool of Strings which is stored in Java Heap Memory
      *
-     * String Literal: in String literal value are stored in String pool and address is stored in stack
+     * *\*String Literal: in String literal value are stored in String pool and address is stored in stack
      *                  Each time you create a string literal, the JVM checks the "string  pool" first.
      *                  If the string already exists in the pool, a reference to the pooled instance is returned.
      *                  If the string doesn't exist in the pool,
@@ -14,7 +14,7 @@ public class StringLiteralnObject {
      *                  String strLiteral1= "Ammar";
      *                  String strLiteral2= "Ammar";   both String Literal point the same reference
      *
-     * String Object: it allocate space in heap memory and contain the address of string pool,
+     * *\*String Object: it allocate space in heap memory and contain the address of string pool,
      *                  where value is saves and stack saves the address of String object
      *
      *                  Example:

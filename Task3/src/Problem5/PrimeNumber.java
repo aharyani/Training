@@ -5,6 +5,8 @@ public class PrimeNumber {
     static void primeNumber(int num) {
         int flag;
         int count = 0;
+
+
         for (int i = 2; i < num; i++) {
             flag = 1;
 

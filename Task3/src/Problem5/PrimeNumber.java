@@ -2,11 +2,7 @@ package Problem5;
 
 public class PrimeNumber {
 
-    public static void main(String[] args) {
-        prime_number(50);
-    }
-
-    static void prime_number(int num) {
+    static void primeNumber(int num) {
         int flag;
         int count = 0;
         for (int i = 2; i < num; i++) {

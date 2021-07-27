@@ -1,6 +1,10 @@
 package Problem2;
 
-public class StringCompareto {
+public class StringCompare {
+    /**
+     * compare the unicode of character, return the difference and if all unicode matches it return 0
+     */
+
     static void stringCompareto(){
         String strLiteral1= "Ammar";
         String strLiteral2= "Annus";

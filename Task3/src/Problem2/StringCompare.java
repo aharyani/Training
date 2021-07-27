@@ -2,7 +2,8 @@ package Problem2;
 
 public class StringCompare {
     /**
-     * compare the unicode of character, return the difference and if all unicode matches it return 0
+     * Compare the unicode of character, return the difference and if all unicode matches it return 0
+     * It compare character by character  of both string
      */
 
     static void stringCompareto(){

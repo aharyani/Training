@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="11bab02e-805e-4381-97b7-724c63207b1e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/one/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem1/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/one/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/two/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem2/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/two/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem3point1/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem3point1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem3point1/Truck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem3point1/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem3point2/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem3point2/EmployeeAggregation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem3point2/EmployeeComposition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem3point2/Job.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem3point2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point1/Child.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point1/Father.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point1/GrandFather.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point1/GrandMother.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point2/Iphone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point2/MobilePhone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point2/Nokia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point3/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point3/Java.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point3/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/Task1/Problem4point3/ProgrammingLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/one/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/one/Child.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/one/Father.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/one/Father.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/one/GrandFather.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/one/GrandFather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/one/GrandMother.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/one/GrandMother.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/one/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/one/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/three/C.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/three/C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/three/Java.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/three/Java.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/three/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/three/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/three/ProgrammingLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/three/ProgrammingLanguage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/two/Iphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/two/Iphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/two/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/two/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/two/MobilePhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/two/MobilePhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/two/Nokia.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/four/point/two/Nokia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/one/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/one/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/one/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/one/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/one/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/one/Truck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/one/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/one/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/two/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/two/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/two/EmployeeAggregation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/two/EmployeeAggregation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/two/EmployeeComposition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/two/EmployeeComposition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/two/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/two/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/two/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task1/src/com/nisum/assignment/problem/three/point/two/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1vwYCc6Cd6CsvUaboX5b8anRIQm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task1" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nisum.assignment.problem.three.Main" />
+      <module name="Task2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nisum.assignment.problem.three.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11bab02e-805e-4381-97b7-724c63207b1e" name="Default Changelist" comment="" />
+      <created>1627474491936</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627474491936</updated>
+    </task>
+    <servers />
+  </component>
+</project>

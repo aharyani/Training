@@ -5,23 +5,21 @@ public class Main {
 
 
         try {
-            simulateNullPointerException();
-        } catch (NullException exp) {
-            System.out.println("Caught MyNullPointerException : "+exp.getMessage());
+            occur();
+        } catch (MyNullException exp) {
+            System.out.println("Caught MyNullPointerException : " + exp.getMessage());
         }
-
-
 
     }
 
 
-    private static void simulateNullPointerException() {
+    private static void occur() {
         try {
             String blankString = null;
-            System.out.println("String length :"+blankString.length());
-            //simulating null pointer exception.
+            System.out.println("String length :" + blankString.length());
+            //calling custom null pointer exception.
         } catch (NullPointerException exp) {
-            throw new NullException("Using Custom Null Exception");
+            throw new MyNullException("Using Custom Null Exception");
         }
     }
 }

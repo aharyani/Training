@@ -3,7 +3,6 @@ package com.nisum.assignment.problem.three;
 public class Student {
 
 
-
     private int id;
     private String name;
     private int age;
@@ -25,6 +24,7 @@ public class Student {
     public int getAge() {
         return age;
     }
+
     @Override
     public String toString() {
         return "Student{" +

@@ -1,6 +1,6 @@
 package com.nisum.assignment.problem;
 
-public class Occurence {
+public class NullOccurence {
     public static void occur() {
         try {
             String blankString = null;

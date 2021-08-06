@@ -8,14 +8,14 @@ public class Main {
          *   (your custom exception should be thrown if String is NULL)
          */
 
-        try {
-            Occurence.occur();
-        } catch (MyCustomNullException exp) {
-            System.out.println("Caught NullPointerException : " + exp.getMessage());
-        }
-
+        NullOccurence.occur();
     }
 
 }
 
 
+//        try {
+//            Occurence.occur();
+//        } catch (MyCustomNullException exp) {
+//            System.out.println("Caught NullPointerException : " + exp.getMessage());
+//        }

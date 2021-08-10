@@ -1,7 +1,6 @@
-package com.nisum.assignment.problem.one;
+package com.nisum.assignment.problem.one.point.one;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
 

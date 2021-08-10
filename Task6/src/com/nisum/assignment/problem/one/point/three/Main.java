@@ -1,4 +1,4 @@
-package com.nisum.assignment.problem.three;
+package com.nisum.assignment.problem.one.point.three;
 
 import java.util.*;
 

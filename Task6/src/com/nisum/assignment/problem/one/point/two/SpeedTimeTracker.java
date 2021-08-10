@@ -1,4 +1,4 @@
-package com.nisum.assignment.problem.two;
+package com.nisum.assignment.problem.one.point.two;
 
 import java.util.ArrayList;
 import java.util.Arrays;

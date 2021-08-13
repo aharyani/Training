@@ -25,7 +25,7 @@ public class Main {
             return o1.getName().compareTo(o2.getName());
         };
 
-        Collections.sort(studentList, logic);
+        studentList.sort(logic);
 
         studentList.forEach(System.out::println);
 

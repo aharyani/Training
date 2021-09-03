@@ -1,45 +1,55 @@
 package com.nisum.project.flightreservation.controller;
 
 import com.nisum.project.flightreservation.entities.Flight;
-import com.nisum.project.flightreservation.exception.GeneralException;
-import com.nisum.project.flightreservation.repository.FlightRepository;
 import com.nisum.project.flightreservation.services.FlightService;
-import com.nisum.project.flightreservation.services.FlightServices;
-import jdk.jfr.internal.Options;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
-import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 
-@RestController
+@RestController("/flight")
 public class FlightController {
 
-	@Autowired
-	private FlightRepository flightRepository;
+    @Autowired
+    private FlightService flightService;
 
-	private FlightServices flightServices;
+    @GetMapping
+    public ResponseEntity<List<Flight>> getAll() {
+        return new ResponseEntity<>(flightService.getAll(), HttpStatus.FOUND);
+    }
 
-	@PostMapping(value = "/findFlight")
-	public List<Flight> findflight(@Valid @RequestParam("from") String from, @Valid @RequestParam("to") String to, @Valid @RequestParam("depDate")@DateTimeFormat(pattern="MM/dd/yyyy")Date depDate) {
+    @GetMapping("/{id}")
+    public ResponseEntity<Flight> gettById(@PathVariable long id) {
+        return new ResponseEntity<>(flightService.findById(id), HttpStatus.FOUND);
+    }
 
-		List<Flight> flights = flightRepository.findFlights(from, to, depDate);
+    @PostMapping("/insert")
+    public ResponseEntity<Flight> insertNew(@Valid @RequestBody Flight flight) {
+        return new ResponseEntity<>(flightService.insertFlightDetail(flight), HttpStatus.CREATED);
+    }
 
-		return flights;
+    @GetMapping("/flightNumber/{flightNumber}")
+    public ResponseEntity<List<Flight>> getByFlightNumber(@PathVariable String flightNumber) {
+        return new ResponseEntity<>(flightService.findByFlightNumber(flightNumber), HttpStatus.FOUND);
+    }
 
-	}
+    @PostMapping
+    public ResponseEntity<List<Flight>> findflight(@RequestParam("from") String from, @RequestParam("to") String to, @Valid @RequestParam("depDate") String depDate) {
+        return new ResponseEntity<>(flightService.findByDateAndCities(from, to, depDate), HttpStatus.FOUND);
+    }
 
-	@RequestMapping(value="/addFlightdetail")
-	public ResponseEntity<Flight> addFlightDetail(@Valid @RequestBody Flight flight) {
-		return flightServices.addFlightDetail(flight);
-	}
-	
-	
+    @PutMapping
+    public ResponseEntity<Flight> updateDetail(@Valid @RequestBody Flight flight) {
+        return new ResponseEntity<>(flightService.updatetDetail(flight), HttpStatus.ACCEPTED);
+    }
+
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity deleteById(@PathVariable Long id) {
+        flightService.deletetbyId(id);
+        return new ResponseEntity(HttpStatus.ACCEPTED);
+    }
+
 }

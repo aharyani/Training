@@ -10,7 +10,7 @@ import javax.validation.constraints.Pattern;
 import java.util.Date;
 
 @Entity
-@Table(name="Flights")
+@Table(name = "Flights")
 @Data
 public class Flight extends AbstractClass {
 
@@ -23,14 +23,16 @@ public class Flight extends AbstractClass {
     private String operatingAirlines;
 
     @Column(name = "departure_city")
+    @NotEmpty(message = "Departure City should not be empty or null")
     private String departureCity;
 
     @Column(name = "arrival_city")
+    @NotEmpty(message = "Arrival City should not be empty or null")
     private String arrivalCity;
 
     @Column(name = "date_of_departure")
-    @Pattern(regexp = "(\\d{2})/(\\d{2})/(\\d{4}) (\\d{2}):(\\d{2}):(\\d{2})",message = "Insert valid format of date")
+    @Pattern(regexp = "(\\d{2})/(\\d{2})/(\\d{4}) (\\d{2}):(\\d{2})", message = "Insert valid format of date")
     @NotEmpty()
-    private Date dateOfDeparture;
+    private String dateOfDeparture;
 
 }

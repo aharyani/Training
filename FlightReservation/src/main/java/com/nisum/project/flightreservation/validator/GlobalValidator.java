@@ -11,12 +11,13 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 public class GlobalValidator extends ResponseEntityExceptionHandler {
 
-    private String message=null;
+    private String message = null;
+
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
                                                                   HttpHeaders headers, HttpStatus status, WebRequest request) {
 
-        ex.getBindingResult().getAllErrors().forEach(error ->message=error.getDefaultMessage());
+        ex.getBindingResult().getAllErrors().forEach(error -> message = error.getDefaultMessage());
         return new ResponseEntity<Object>(message, HttpStatus.BAD_REQUEST);
     }
 

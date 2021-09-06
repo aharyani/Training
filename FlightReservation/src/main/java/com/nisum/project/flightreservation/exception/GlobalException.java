@@ -9,7 +9,6 @@ public class GlobalException {
 
     @ExceptionHandler(value = GeneralException.class)
     public ResponseEntity serviceNullPointer(GeneralException generalException) {
-
-        return new ResponseEntity(generalException.getMessage() , generalException.getStatus());
+        return new ResponseEntity(generalException.getMessage(), generalException.getStatus());
     }
 }

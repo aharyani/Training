@@ -1,5 +1,6 @@
 package com.nisum.project.flightreservation.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.persistence.Column;

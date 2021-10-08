@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-@RestController("/flight")
+@RestController()
+@RequestMapping("/flight")
 public class FlightController {
 
     @Autowired

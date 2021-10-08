@@ -1,14 +1,18 @@
 package com.nisum.project.flightreservation.mockito;
 import com.nisum.project.flightreservation.entities.Flight;
 import com.nisum.project.flightreservation.repository.FlightRepository;
+import com.nisum.project.flightreservation.services.FlightService;
+import com.nisum.project.flightreservation.services.FlightServiceimpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -22,6 +26,9 @@ public class FlightTesting {
 
     @Mock
     FlightRepository flightRepository;
+
+    @InjectMocks
+    FlightServiceimpl flightService;
 
     @Test
     void getAllFlight() {
@@ -49,7 +56,8 @@ public class FlightTesting {
         flightList.add(flight1);
 
         when(flightRepository.findAll()).thenReturn(flightList);
-        assertEquals(2, flightList.size());
+
+        assertEquals(2, flightService.getAll().size());
     }
 
     @Test
@@ -64,12 +72,14 @@ public class FlightTesting {
 
         when(flightRepository.save(flight)).thenReturn(flight);
 
-        assertEquals(1,flight.getId());
-        assertEquals("PIA12345",flight.getFlightNumber());
-        assertEquals("Karachi",flight.getArrivalCity());
-        assertEquals("12/11/2021 20:25",flight.getDateOfDeparture());
-        assertEquals("Islamabad",flight.getDepartureCity());
-        assertEquals("Pakistan International Airline",flight.getOperatingAirlines());
+        Flight returnObject = flightService.insertFlightDetail(flight);
+
+        assertEquals(1,returnObject.getId());
+        assertEquals("PIA12345",returnObject.getFlightNumber());
+        assertEquals("Karachi",returnObject.getArrivalCity());
+        assertEquals("12/11/2021 20:25",returnObject.getDateOfDeparture());
+        assertEquals("Islamabad",returnObject.getDepartureCity());
+        assertEquals("Pakistan International Airline",returnObject.getOperatingAirlines());
     }
 
     @Test
@@ -94,8 +104,10 @@ public class FlightTesting {
         flightList.add(flight);
         flightList.add(flight1);
 
+
         when(flightRepository.findByFlightNumber("PIA12345")).thenReturn(flightList);
-        assertEquals(2, flightList.size());
+
+        assertEquals(2, flightService.findByFlightNumber("PIA12345").size());
 
     }
 
@@ -111,11 +123,13 @@ public class FlightTesting {
 
         when(flightRepository.findById(1L)).thenReturn(Optional.of(flight));
 
-        assertEquals(Optional.of(1L),Optional.of(flight.getId()));
-        assertEquals(Optional.of("Pakistan International Airline"),Optional.of(flight.getOperatingAirlines()));
+        Flight returnObject = flightService.findById(1L);
+
+        assertEquals(Optional.of(1L),Optional.of(returnObject.getId()));
+        assertEquals(Optional.of("Pakistan International Airline"),Optional.of(returnObject.getOperatingAirlines()));
 
     }
-
+    
 
 
 }

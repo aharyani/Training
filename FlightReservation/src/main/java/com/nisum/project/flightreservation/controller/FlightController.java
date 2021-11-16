@@ -11,7 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController()
-@RequestMapping("/flight")
+@RequestMapping("/flight/v1")
 public class FlightController {
 
     @Autowired

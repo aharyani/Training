@@ -1,11 +1,9 @@
 package com.nisum.project.flightreservation.integration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-//import com.github.javafaker.Faker;
 import com.nisum.project.flightreservation.FlightReservationApplication;
 import com.nisum.project.flightreservation.entities.Flight;
 import com.nisum.project.flightreservation.repository.FlightRepository;
-import org.hamcrest.Matchers;
 import org.json.JSONObject;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
